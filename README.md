@@ -1,6 +1,22 @@
 # Project
 해당 프로젝트는 객체지향언어2 수업에서 Java 실습으로 진행한 1인 텀프로젝트입니다.
 
+- audio 파일에 음원을 추가하여 배경음을 삽입할 수 있습니다.
+
+- GameTitleFrame, GamePanel 클래스의 loadAudio
+	```
+    private void loadAudio() {
+        try {
+            clip = AudioSystem.getClip();
+            File audioFile = new File("audio/원하는 음원 파일의 이름");
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+            clip.open(audioStream);
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+	```
+
 
 ## 개요
 
@@ -22,11 +38,16 @@
   
   - 초록색 미사일: 사용자의 생명력이 1-4인 경우 생명력을 회복한다.
 
+- 랭킹
+- 단어 추가
+- 단어장
+- 음소거
+- 게임 재시작
+
 
 
 ## 게임 시연
 
 
-![Zulu-11-jre 2023 04 14 - 01 05 27 01](https://user-images.githubusercontent.com/83208807/231840064-8ed4fb30-67d8-4f9c-9209-08ebcce98383.gif)
-
+![55 (online-video-cutter com)](https://user-images.githubusercontent.com/83208807/231847915-878c64e9-02ab-496d-875a-3e14fefc6f1d.gif)
 
