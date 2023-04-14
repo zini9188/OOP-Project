@@ -44,10 +44,3 @@
 - 음소거
 - 게임 재시작
 
-
-
-## 게임 시연
-
-
-![55 (online-video-cutter com)](https://user-images.githubusercontent.com/83208807/231847915-878c64e9-02ab-496d-875a-3e14fefc6f1d.gif)
-
